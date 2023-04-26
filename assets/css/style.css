@@ -20,7 +20,35 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 280px;
+  width: 240px;
   background-color: var(--color-Dark);
   transition: all .5s ease-in-out;
+  z-index: 100;
+}
+
+.logo-box {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--color-light);
+  transition: all .3s ease-in-out;
+}
+
+.logo-box:hover {
+  color: var(--color-Blue);
+}
+
+.logo-box i {
+  font-size: 30px;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  transition: all .3s ease-in-out;
+}
+
+.logo-name {
+  font-style: 22px;
+  font-weight: 700;
 }
