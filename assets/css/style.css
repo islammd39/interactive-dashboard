@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-Blue: #2176ff;
+  --color-Dark: #16203b;
+  --color-Deep: #1f2421;
+  --color-light: #f8f7ff;
+  --color-info: #f8f9fa;
+
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background-color: var(--color-Dark);
+  transition: all .5s ease-in-out;
+}
