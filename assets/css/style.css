@@ -11,7 +11,7 @@
   --color-Dark: #16203b;
   --color-Deep: #1f2421;
   --color-light: #f8f7ff;
-  --color-info: #f8f9fa;
+  --color-info: #bcb8b1;
 
 }
 
@@ -51,4 +51,91 @@
 .logo-name {
   font-style: 22px;
   font-weight: 700;
+}
+
+.sidebar-list {
+  height: 100%;
+  padding: 30px 0 15px 0;
+  overflow: auto;
+}
+
+.sidebar-list::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-list li {
+  transition: all .3s ease-in-out;
+}
+
+.sidebar-list li:hover {
+  background-color: var(--color-Deep);
+}
+
+.sidebar-list li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar-list li.active .title {
+  background-color: var(--color-Blue);
+}
+
+.sidebar-list li.active .fa-chevron-down {
+  transition: all .3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.sidebar-list li .title .link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-list li .title i {
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--color-info);
+  font-size: 20px;
+}
+
+.sidebar-list li .title .name {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-light);
+}
+
+.sidebar-list li .submenu {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.sidebar-list li.dropdown.active .submenu {
+  width: unset;
+  height: unset;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 6px 14px 80px;
+  background-color: var(--color-Deep);
+}
+
+.submenu .link {
+  color: var(--color-info);
+  font-size: 15px;
+  padding: 5px 0;
+  transition: all .3s ease-in-out;
+}
+
+.submenu .link:hover {
+  color: #fff;
+}
+
+.submenu-title {
+  display: none;
 }
